@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- IMPORTANT: 
+
+For simplicity sake, I have uploaded all the related resources of this project, like ( .js files, .css files etc. ) to the BASE location mentioned below. Please visit this URL and then SAVE all these files, to your local folder ( i.e. to the folder containing this html file ) and then REMOVE this BASE tag, for complete LOCAL hosting purposes. 
+
+-->  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+.modal-body h1 {
+  font-weight: 900;
+  font-size: 2.3em;
+  text-transform: uppercase;
+}
+
+.modal-body a.pre-order-btn {
+  color: #000;
+  background-color: gold;
+  border-radius: 1em;
+  padding: 1em;
+  display: block;
+  margin: 2em auto;
+  width: 50%;
+  font-size: 1.25em;
+  font-weight: 6600;
+}
+
+.modal-body a.pre-order-btn:hover {
+  background-color: #000;
+  text-decoration: none;
+  color: gold;
+}
+
+
+</style>
+
+<body>
+
+	<form
+  action="https://formspree.io/f/meqbnpjv"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+	
+	<!-- <div class="bottom-text">
+	  <p>Magnific Popup on Github - <a href="https://github.com/dimsemenov/Magnific-Popup">https://github.com/dimsemenov/Magnific-Popup</a>,<br/> plugin homepage - <a href="http://dimsemenov.com/plugins/magnific-popup/">http://dimsemenov.com/plugins/magnific-popup/</a></p>
+	</div> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){       
+   $('#myModal').modal('show');
+    }); 
+</script>
+    
+</body>
+
+</html>

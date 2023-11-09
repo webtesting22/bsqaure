@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-fixed-top py-0" aria-label="Offcanvas navbar large">
+        <div class="container-fluid" id="nav_container">
+            <a class="navbar-brand" href="index.html"><img src="./public/images/logo.JPG" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+                aria-controls="offcanvasNavbar2">
+                <span class="bi bi-list "></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasNavbar2"
+                aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbar2Label"><img src="./public/images/logo.JPG" alt="">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown2" role="button"
+                                aria-haspopup="true" aria-expanded="false" type="button" data-bs-toggle="dropdown">
+                                Locations
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item" href="./locations/location1.html">Westgate</a>
+                                <a class="dropdown-item" href="./locations/location2.html">S.G.Road</a>
+                                <a class="dropdown-item" href="./locations/location3.html">IIM A Road</a>
+                                <a class="dropdown-item" href="./locations/location4.html">Navrangpura</a>
+                                <a class="dropdown-item" href="./location5.html">Sindhu Bhawan</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown2" role="button"
+                                aria-haspopup="true" aria-expanded="false" type="button" data-bs-toggle="dropdown">
+                                Workspace
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item" href="#">Office Space</a>
+                                <a class="dropdown-item" href="#">Furnished Coworking Space</a>
+                                <a class="dropdown-item" href="#">Meeting Space</a>
+                                <a class="dropdown-item" href="#">Virtual Space</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Facilities.html">Amenities</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="AboutUs.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Blogs.html">Blogs</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="ContactUs.html">Contact Us</a>
+                        </li> -->
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="./public/images/back1.jpg" class="d-block w-100" alt="...">
+                <!-- <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div> -->
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./public/images/back2.jpg" class="d-block w-100" alt="...">
+                <!-- <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div> -->
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./public/images/back3.jpg" class="d-block w-100" alt="...">
+                <!-- <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div> -->
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <main>
+        <div class="container iframe">
+            <iframe class="w-100 pt-3 pb-3"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d917.9689247324225!2d72.52970465601057!3d23.02833575231899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84cf45606dfd%3A0x1c7fb7c03fb46550!2sRatnaakar%20Nine%20Square!5e0!3m2!1sen!2sin!4v1691558046268!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row w-100 justify-content-center">
+                <div class="col-xs-3 col-sm-2 m-auto text-center">
+                    <a href="index.html"><img src="./public/images/logo.JPG" alt="logo" class="m-auto"></a>
+
+                </div>
+                <div class="col-xs-3 col-sm-2 mt-4">
+                    <ul>
+                        <li class="m-0"><a href="">Client Testimonials</a></li>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Gallery</a></li>
+                        <li><a href="">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-3 col-sm-2 mt-4">
+                    <ul>
+                        <li class="m-0"><a href="">Office Space</a></li>
+                        <li><a href="">Coworking Space</a></li>
+                        <li><a href="">Meeting Space</a></li>
+                        <li><a href="">Virtual Office</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-3 col-sm-2 mt-4">
+                    <ul>
+                        <li class="m-0"><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms Of Use</a></li>
+                        <li><a href="">Cookies</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-xs-3 col-sm-2 text-center mt-4">
+                    <div class="icons text-center">
+                        <span class="bi bi-instagram"></span>
+                        <span class="bi bi-meta"></span>
+                        <span class="bi bi-linkedin"></span>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <p class="text-center mt-5 ">Designed and Developed by OutleadSolutions</p>
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script>
+        const $dropdown = $(".dropdown");
+        const $dropdownToggle = $(".dropdown-toggle");
+        const $dropdownMenu = $(".dropdown-menu");
+        const showClass = "show";
+
+        $(window).on("load resize", function () {
+            if (this.matchMedia("(min-width: 768px)").matches) {
+                $dropdown.hover(
+                    function () {
+                        const $this = $(this);
+                        $this.addClass(showClass);
+                        $this.find($dropdownToggle).attr("aria-expanded", "true");
+                        $this.find($dropdownMenu).addClass(showClass);
+                    },
+                    function () {
+                        const $this = $(this);
+                        $this.removeClass(showClass);
+                        $this.find($dropdownToggle).attr("aria-expanded", "false");
+                        $this.find($dropdownMenu).removeClass(showClass);
+                    }
+                );
+            } else {
+                $dropdown.off("mouseenter mouseleave");
+            }
+        });
+        const counters = document.querySelectorAll('.value');
+        const speed = 500;
+
+        counters.forEach(counter => {
+            const animate = () => {
+                const value = +counter.getAttribute('akhi');
+                const data = +counter.innerText;
+
+                const time = value / speed;
+                if (data < value) {
+                    counter.innerText = Math.ceil(data + time);
+                    setTimeout(animate, 1);
+                } else {
+                    counter.innerText = value;
+                }
+
+            }
+
+            animate();
+        });
+
+
+
+    </script>
+</body>
+
+</html>
